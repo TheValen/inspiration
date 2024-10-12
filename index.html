@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        .quote {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote" id="quote"></div>
+    <script>
+        // Список цитат
+        const quotes = [
+            "Start where you are. Use what you have. Do what you can.",
+            "Believe in yourself and all that you are.",
+            "Don't watch the clock; do what it does. Keep going.",
+            "The harder you work for something, the greater you'll feel when you achieve it.",
+            "Dream bigger. Do bigger."
+        ];
+
+        // Функция для отображения случайной цитаты
+        function displayRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('quote').textContent = quotes[randomIndex];
+        }
+
+        // Показать случайную цитату при загрузке страницы
+        window.onload = displayRandomQuote;
+    </script>
+</body>
+</html>
+
