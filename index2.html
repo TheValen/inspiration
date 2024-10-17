@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        .quote {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote" id="quote"></div>
+    <script>
+        // Список цитат
+const quotes = [
+    "Perform one action you've been putting off for a long time.",
+            "Write down three fears and think about how to overcome them.",
+            "Plan one new action for tomorrow that brings you closer to your goal.",
+            "Write down what kind of person you want to be in a year, and take the first step.",
+            "Highlight three mistakes that taught you something important.",
+            "Start small: tidy up one place or organize one aspect of your life.",
+            "Decide to start something right now—let it be a small but concrete step.",
+            "Track your habits today and note which ones hinder your success.",
+            "Plan an action for the week ahead that will lead to the desired changes.",
+            "Do something that seems difficult, and write down your feelings afterward.",
+            "Start a success journal and record daily achievements, even the smallest ones.",
+            "Try something new that you've always wanted to do but were afraid of making mistakes.",
+            "Change one habit today that can improve your life.",
+            "Start a new project or activity that you've been postponing.",
+            "Make a five-step plan for achieving a goal.",
+            "Implement one of your ideas, even if it’s a small step.",
+            "Set a goal that goes beyond your comfort zone.",
+            "Do one thing today that you usually don’t do.",
+            "Set a task for today and complete it without delay.",
+            "Create conditions for accomplishing an important task right now.",
+            "Write down three things you are confident in and three actions you can take.",
+            "Start working on your project: make a plan and take the first step.",
+            "Do something that challenges your limitations.",
+            "Do something you’ve long wanted to do but were afraid of or kept postponing.",
+            "Find an opportunity to help someone today without putting it off.",
+            "Do something that frightens you, and write down your feelings afterward.",
+            "Identify a small step that will bring you closer to your goal and take it.",
+            "Make a confident decision and follow through with it today.",
+            "Start pursuing your dream by taking the first concrete action.",
+            "Write the next step after achieving your goal and start working on it immediately."
+];
+
+        // Функция для отображения случайной цитаты
+        function displayRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('quote').textContent = quotes[randomIndex];
+        }
+
+        // Показать случайную цитату при загрузке страницы
+        window.onload = displayRandomQuote;
+    </script>
+</body>
+</html>
+

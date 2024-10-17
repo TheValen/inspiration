@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        .quote {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote" id="quote"></div>
+    <script>
+        // Список цитат
+const quotes = [
+    "Perform one new action every day for a week.",
+    "Do something that scares you within 48 hours.",
+    "Start each day with a new positive action for a month.",
+    "Gradually develop a new habit over 21 days to improve yourself.",
+    "Participate in an event where you're unsure of success.",
+    "Take small steps towards a goal every day for a month.",
+    "Begin a project you've been postponing and make daily progress.",
+    "Keep a daily action journal, noting every productive act for a week.",
+    "Plan your future and follow the plan for 30 days.",
+    "Complete difficult tasks in the morning for two weeks.",
+    "Make progress on one goal without giving up until it is achieved.",
+    "Plan an action that will inevitably lead to a mistake and learn from it.",
+    "Change one habit every day for a month.",
+    "Start three new activities within a week.",
+    "Record your achievements for a month, ignoring setbacks.",
+    "Implement three of your ideas in a week.",
+    "Complete a challenging task weekly for a month.",
+    "Take one step every day towards improvement for 30 days.",
+    "Plan and complete one important task on the same day.",
+    "Create opportunities for yourself every day, rather than waiting for them.",
+    "Keep a confidence journal, recording daily victories.",
+    "Work on your 'life project' every day for 30 days.",
+    "Try one new activity each week to expand your limits.",
+    "Do something that brings you joy every day.",
+    "Participate in charity or help someone in need during the week.",
+    "Overcome one of your fears every week.",
+    "Set one small goal daily.",
+    "Hold confident meetings or conversations every day for a week.",
+    "Work on your dream daily without skipping a day.",
+    "Set a new goal immediately after reaching each one."
+];
+
+        // Функция для отображения случайной цитаты
+        function displayRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('quote').textContent = quotes[randomIndex];
+        }
+
+        // Показать случайную цитату при загрузке страницы
+        window.onload = displayRandomQuote;
+    </script>
+</body>
+</html>
+
